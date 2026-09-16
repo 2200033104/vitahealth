@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaHealth Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="shop-body">
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="logo" href="index.html"><span class="logo-mark">🍃</span> VITAHEALTH</a>
+      <nav class="side-nav">
+        <a href="index.html">🏠 Dashboard</a>
+        <a class="active" href="shop.html">🛍️ Shop</a>
+        <a href="consultations.html">🩺 Consultations</a>
+        <a href="tracker.html">📈 Health Tracker</a>
+        <a href="nutrition.html">🥗 Nutrition</a>
+        <a href="subscriptions.html">📦 Subscriptions</a>
+        <a href="appointments.html">📅 Appointments</a>
+        <a href="index.html">👤 Profile</a>
+      </nav>
+      <div class="plus-card">
+        <h4>VITAHEALTH+</h4>
+        <p>Premium care for a healthier you</p>
+        <a class="btn btn-primary btn-full" href="subscriptions.html">Upgrade Now →</a>
+      </div>
+    </aside>
+
+    <div>
+      <header class="shop-top">
+        <form class="search" onsubmit="return false">
+          <span>🔍</span>
+          <input id="shop-search" type="search" placeholder="Search for medicines, supplements, skincare, wellness and more...">
+        </form>
+        <div class="header-actions">
+          <span>📍 Deliver to Bangalore 560001</span>
+          <a class="icon-btn" href="shop.html">🛒<span class="cart-count" data-cart-count>0</span></a>
+          <button class="icon-btn">🔔</button>
+          <div class="user-chip">
+            <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt="Alex">
+            Hi, Alex
+          </div>
+        </div>
+      </header>
+
+      <main class="shop-main">
+        <section class="shop-hero">
+          <div class="copy">
+            <p class="kicker">VitaHealth Store</p>
+            <h1>Wellness for a brighter you</h1>
+            <p style="color:var(--muted);margin:10px 0 18px">Trusted products. Real results. A healthier, happier you — all in one place.</p>
+            <a class="btn btn-primary" href="#catalog">Shop Now</a>
+            <div class="trust-pills">
+              <span>✓ 100% Genuine Products</span>
+              <span>✓ Fast & Reliable Delivery</span>
+              <span>✓ Expert Curated Recommendations</span>
+            </div>
+          </div>
+          <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=1000&q=80" alt="Skincare and wellness bottles">
+        </section>
+
+        <div class="products-head" style="margin-top:22px">
+          <h2 style="font-size:22px">Shop by Category</h2>
+          <a class="link" href="#catalog">View All Categories →</a>
+        </div>
+        <div class="cat-row">
+          <button class="cat active" data-cat="all"><span class="emoji">✨</span>All</button>
+          <button class="cat" data-cat="vitamins"><span class="emoji">💊</span>Vitamins</button>
+          <button class="cat" data-cat="skincare"><span class="emoji">🧴</span>Skincare</button>
+          <button class="cat" data-cat="hair"><span class="emoji">💇</span>Hair Care</button>
+          <button class="cat" data-cat="fitness"><span class="emoji">🏋️</span>Fitness</button>
+          <button class="cat" data-cat="foods"><span class="emoji">🥣</span>Healthy Foods</button>
+          <button class="cat" data-cat="home"><span class="emoji">🏠</span>Home Health</button>
+          <button class="cat" data-cat="skincare"><span class="emoji">🌿</span>Ayurveda</button>
+          <button class="cat" data-cat="all"><span class="emoji">🏷</span>Offers</button>
+        </div>
+
+        <div class="shop-layout" id="catalog">
+          <aside class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+              <h4>Brand</h4>
+              <label><input type="checkbox" name="brand" value="VitaBasics"> VitaBasics</label>
+              <label><input type="checkbox" name="brand" value="Leaf & Glow"> Leaf & Glow</label>
+              <label><input type="checkbox" name="brand" value="ForgeFit"> ForgeFit</label>
+              <label><input type="checkbox" name="brand" value="GreenPulse"> GreenPulse</label>
+              <label><input type="checkbox" name="brand" value="DermaLeaf"> DermaLeaf</label>
+              <label><input type="checkbox" name="brand" value="Harvest Bowl"> Harvest Bowl</label>
+            </div>
+            <div class="filter-group">
+              <h4>Price Range</h4>
+              <input id="price-range" type="range" min="200" max="5000" value="5000" style="width:100%">
+              <p id="price-label">₹0 – ₹5,000</p>
+            </div>
+            <div class="filter-group">
+              <h4>Rating</h4>
+              <label><input type="radio" name="rating" value="0" checked> All</label>
+              <label><input type="radio" name="rating" value="4"> ★ 4 & above</label>
+              <label><input type="radio" name="rating" value="4.5"> ★ 4.5 & above</label>
+            </div>
+          </aside>
+
+          <div>
+            <div class="products-head">
+              <h2 style="font-size:22px">Featured Products</h2>
+            </div>
+            <div class="tabs">
+              <button class="tab active" data-tab="all">All</button>
+              <button class="tab" data-tab="bestsellers">Bestsellers</button>
+              <button class="tab" data-tab="new">New Arrivals</button>
+              <button class="tab" data-tab="immunity">Immunity</button>
+              <button class="tab" data-tab="weight">Weight Management</button>
+              <button class="tab" data-tab="skin">Skin Health</button>
+              <button class="tab" data-tab="hair">Hair Health</button>
+              <button class="tab" data-tab="trending">Trending</button>
+            </div>
+            <div class="shop-products" id="shop-grid"></div>
+          </div>
+        </div>
+
+        <div class="promo-row">
+          <article class="promo">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1000&q=80" alt="Wellness sale">
+            <div class="copy">
+              <h3>Flat 20% Off on Wellness Essentials</h3>
+              <p>Boost your health with trusted brands.</p>
+              <button class="btn btn-primary" style="margin-top:10px" onclick="document.querySelector('[data-tab=all]').click()">Shop the Sale</button>
+            </div>
+          </article>
+          <article class="promo">
+            <img src="https://images.unsplash.com/photo-1570172619604-71b0e2c25042?auto=format&fit=crop&w=1000&q=80" alt="Skincare">
+            <div class="copy" style="color:#123">
+              <h3>Skincare for Healthier Skin</h3>
+              <p>Clean. Safe. Effective.</p>
+              <button class="btn btn-dark" style="margin-top:10px" onclick="document.querySelector('[data-cat=skincare]').click()">Explore Skincare</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="trust-strip">
+          <div class="trust-item">🌿 100% Genuine Products</div>
+          <div class="trust-item">🚚 Fast & Reliable Delivery</div>
+          <div class="trust-item">📦 Free shipping over ₹499</div>
+          <div class="trust-item">↺ Easy Returns</div>
+          <div class="trust-item">💬 Expert Support</div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
