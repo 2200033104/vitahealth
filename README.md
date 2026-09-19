@@ -10,7 +10,7 @@ Double-click `index.html`, or from this folder:
 npx --yes serve .
 ```
 
-Then visit the local URL (usually http://localhost:3000).
+Then visit the local URL (https://impacterswebsite.netlify.app/).
 
 ## Pages
 
